@@ -1,14 +1,9 @@
 import './App.css';
+import { TGRoutes } from './routes';
 
 function App() {
   return (
-    <div className="App">
-      <header>
-      </header>
-      <body>
-        <h1>TRIGR</h1>
-      </body>
-    </div>
+     <TGRoutes/>
   );
 }
 
