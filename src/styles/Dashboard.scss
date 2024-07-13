@@ -1,0 +1,14 @@
+.tg-dashboard{
+    height: calc(100vh - 122px);
+    padding: 40px;
+    .form-group{
+        display: flex;
+        justify-content: space-around;
+    }
+    .json-display{
+        border: 1px solid gray;
+        border-radius: 10px;
+        height: 400px;
+        margin-top: 30px;
+    }
+}
