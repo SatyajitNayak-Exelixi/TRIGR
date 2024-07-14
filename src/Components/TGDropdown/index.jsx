@@ -1,11 +1,11 @@
-export const TGDropdown = ({ items = [] }) => {
+export const TGDropdown = ({ items = [], onChange=()=>{} }) => {
   const renderOptions = items?.map((item, id) => {
-    return <option value={item}>{item}</option>;
+    return <option key={id} value={item}>{item}</option>;
   });
 
   return (
     <>
-      <select className="tg-dropdown" name="methods" id="methods">
+      <select onChange={onChange}  className="tg-dropdown" name="methods" id="methods">
         {renderOptions}
       </select>
     </>
